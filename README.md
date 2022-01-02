@@ -10,12 +10,12 @@
     You can use it for more than just server side code.
         Eg. utility scripts, build tools, ...
 
-Execute Files.
-    Used for real apps.
-    Predictable sequence of steps.
-Use the REPL (type 'node' in cmd).
-    Great playground.
-    Execute code as you write it.
+    Execute Files.
+        Used for real apps.
+        Predictable sequence of steps.
+    Use the REPL (type 'node' in cmd).
+        Great playground.
+        Execute code as you write it.
 
 # node JS role (in Web development)
     Run Server
