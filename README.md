@@ -18,12 +18,12 @@ Use the REPL (type 'node' in cmd).
     Execute code as you write it.
 
 # node JS role (in Web development)
-Run Server
-    create server and listen to incoming requests
-Buisness Logic
-    Handle requests, Validate inputs, connect to DB
-Responses
-    return Responses (Rendered HTML, JSON, ...)  
+    Run Server
+        create server and listen to incoming requests
+    Buisness Logic
+        Handle requests, Validate inputs, connect to DB
+    Responses
+        return Responses (Rendered HTML, JSON, ...)  
 
 # REPL
     Read    -   read user input
