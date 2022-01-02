@@ -1,14 +1,14 @@
 # nodeJS notes
-Javascript on server.
-Node JS is a Javascript Runtime.
-We can use node JS to run javascript outside of browser.
-Uses V8 javascript engine that run JS into the browser.
-    Takes JS code and compiles to machine code.
-    V8 is written in C++.
-To check the node version.
-    Command: node -v .
-You can use it for more than just server side code.
-    Eg. utility scripts, build tools, ...
+    Javascript on server.
+    Node JS is a Javascript Runtime.
+    We can use node JS to run javascript outside of browser.
+    Uses V8 javascript engine that run JS into the browser.
+        Takes JS code and compiles to machine code.
+        V8 is written in C++.
+    To check the node version.
+        Command: node -v .
+    You can use it for more than just server side code.
+        Eg. utility scripts, build tools, ...
 
 Execute Files.
     Used for real apps.
