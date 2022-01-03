@@ -119,3 +119,5 @@
 
         some npm packages:
             nodemon //live server, refreshes on save
+                to use nodemon, change in package.json
+                    "start": "nodemon server.js"
