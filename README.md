@@ -60,7 +60,13 @@
     os
 
 # Node JS Program Lifecycle
+    client=>request=>server=>response=>client
+
     node server.js  ->  Start Script    ->  Parse code, Register Variables and Functions    ->  event loop  ->  process.exit
+
+    NodeJS runs non-blocking JS code and uses an event-driven code (event-loop) for running your logic
+    A Node program exits as soon as there is no more work to do
+    Note: the createServer() event never finishes by default
 
     event loop
         a loop process which is managed by nodeJS which keeps on running as long as there is work to do
@@ -93,4 +99,10 @@
             runs on different threads
             once a worker is done (eg. finishes writing a file), it will trigger a callback
 
-        
+    Asynchronous Code
+        JS code is non-blocking
+        Use callbacks and events => Order changes!
+    
+    Requests & Responses
+        parse request data in chunks (Streams & Buffers)
+        avoid "double responses"
