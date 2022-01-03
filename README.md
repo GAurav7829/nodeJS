@@ -41,3 +41,11 @@
     Versatile Language
         Runs in browser & directly on PC/server
         Can perform a broad varity of tasks
+
+# HTTP, HTTPS
+    HTTP
+        HyperText Transfer Protocol
+        A Protocol for transfering data which is understood by browser and server
+    HTTPS
+        HyperText Transfer Protocol Secure
+        HTTP + Data Encryption (during Transmission)
