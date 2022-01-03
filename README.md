@@ -106,3 +106,16 @@
     Requests & Responses
         parse request data in chunks (Streams & Buffers)
         avoid "double responses"
+
+# NPM - node package manager
+    npm init : to create package.json file
+    npm start : to start the application
+    npm run start-server : to run the script
+
+    to install node packages
+        npm install packagename --save-dev  //to install in development server only
+        npm install packagename --save  //to install in production server
+        npm install packagename -g  //to install package globally on machine
+
+        some npm packages:
+            nodemon //live server, refreshes on save
