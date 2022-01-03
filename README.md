@@ -49,3 +49,48 @@
     HTTPS
         HyperText Transfer Protocol Secure
         HTTP + Data Encryption (during Transmission)
+
+# Node JS Core Modules
+    http
+        launch a server, send request
+    https
+        launch a SSL server
+    fs
+    path
+    os
+
+# Node JS Program Lifecycle
+    node server.js  ->  Start Script    ->  Parse code, Register Variables and Functions    ->  event loop  ->  process.exit
+
+    event loop
+        a loop process which is managed by nodeJS which keeps on running as long as there is work to do
+        OR
+        keeps on running as long as there are event listners registered
+
+        The Node Application
+            Single threaded Javascript
+        automatically starts by nodeJS.
+        responsible for handling event callbacks
+        
+        -timer callbacks
+            executes setTimeout, setInterval Callbacks
+        -pending callbacks
+            executes I/O-related callbacks that were deferred
+        -poll
+            retrieve new I/O events, executes their callbacks
+            also checks any timer callback due to be executed, if callback is there, then it jumps to the timer callback
+            also check if deferred callbacks is pending, then it jumps to the pending callback
+        -check
+            execute setImmediate() callbacks
+        -close callbacks
+            executes all 'close' events callback
+        process.exit
+            if no other callbacks left
+    
+    for file system (fs) operations send to Worker Pool for long taking operations
+        Worker pool also managed by nodeJS
+            do the heavy lifting
+            runs on different threads
+            once a worker is done (eg. finishes writing a file), it will trigger a callback
+
+        
