@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgb(228, 238, 95);
+    padding: 0 1.5rem;
+}
+
+.main-header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-header__item {
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.main-header__item a {
+    text-decoration: none;
+    color: rgb(34, 30, 30);
+
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+    color: rgb(48, 48, 139);
+}
+
+main {
+    padding: 1rem;
+}
+
+.form-control {
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+}
+
+.form-control input {
+    border: 1px solid rgb(228, 238, 95);
+    font: inherit;
+    border-radius: 2px;
+}
+
+button {
+    font: inherit;
+    border: 1px solid rgb(228, 238, 95);
+    background-color: white;
+    color: rgb(145, 145, 9);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: rgb(145, 145, 9);
+    color: rgb(228, 238, 95);
+}
+
+.product-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}

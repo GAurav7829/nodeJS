@@ -108,9 +108,17 @@
         avoid "double responses"
 
 # NPM - node package manager
+    it allows you you to manage your node project and its dependencies.
+    you can initialize a project with "npm init".
+    npm scripts can be defined in package.json to give you shortcuts to common tasks/commands.
+
     npm init : to create package.json file
     npm start : to start the application
     npm run start-server : to run the script
+
+    node projects typically don't just use core modules and custom code but also uses 3rd party packages.
+    you can install via npm
+    you can differentiate b/w production dependencies(--save), development dependenies(--save-dev) and global dependencies(-g)
 
     to install node packages
         npm install packagename --save-dev  //to install in development server only
@@ -121,3 +129,49 @@
             nodemon //live server, refreshes on save
                 to use nodemon, change in package.json
                     "start": "nodemon server.js"
+    
+# Types of error
+    Syntax, runtime and logical errors can break your app.
+    Syntax and runtime errors throw helpful error messages with line numbers.
+    Logical errors can be fixed with testing and help of debugger
+
+    Debugging:
+        Use VS code Node debugger to step into your code and go through it step by step.
+        Analyse variable values at runtime.
+        Look into the variable at runtime.
+        Set breakpoints cleverly(i.e. respect the async/event driven nature).
+
+# Express.js
+    Server side logic is complex.
+    You want to focus on your Buisness Logic, not on the details.
+    Use a framework for the heavy lifting.
+    Express.js helps with this.
+    Express.js is a node.js framework - a package that adds a bunch of utility functions and tools and a clear set of rules on how the app should be build(middleware).
+    It's highly extensible and other packages can be plugged into it(middleware).
+
+    Middleware, next(), res()
+        Express.js relies heavily on middleware functions - you can easily add them by calling use().
+        Middleware functions handle a request and should call next() to forward the request to the next function in line or send a response.
+    
+    Routing
+        You can filter requests by path and method.
+        If you filter by method, paths are matched exactly, otherwise the first segment of URL is matched.
+        You can use the express.Router to split your routes across files elegantely.
+
+    Serve Files
+        You are not limited to serving the dummy text as a response.
+        You can use sendFile() to users. eg.HTML file.
+        If a request is directly made for a file (eg. css file is requested), you can enable static serving for such files via express.static()
+
+    to install expressJS
+        npm install --save express
+        npm install --save body-parser //to add 3rd party module for parsing the requests
+
+    express.js is all about the middleware
+        request => middleware[req, res, next] => response
+
+    deprecated:
+    module.exports = path.dirname(process.mainModule.filename);
+    Use:
+    module.exports = path.dirname(require.main.filename);
+    
